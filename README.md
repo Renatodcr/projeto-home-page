@@ -1,3 +1,7 @@
+**Para vizualizar o projeto acesse o link** https://desafio-home-page.netlify.app/
+
+**Projeto desenvolvido com ReactJS, é um desafio do site Frontend Mentor. Acesse o link do desafio** https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq
+
 # Frontend Mentor - Room homepage
 
 ![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)
