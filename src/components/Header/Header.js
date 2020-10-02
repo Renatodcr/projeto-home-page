@@ -1,8 +1,10 @@
-import React, { useCallback, useRef } from "react";
-import "./style.css";
+import React, { useCallback, useContext, useRef } from "react";
+import { GlobalContext } from "../GlobalContext/GlobalContext";
 import logo from "../../images/logo.svg";
+import "./style.css";
 
 const Header = () => {
+  const { home } = useContext(GlobalContext);
   const menuRef = useRef();
   const navRef = useRef();
 
@@ -14,7 +16,7 @@ const Header = () => {
   return (
     <div className="header">
       <span onClick={abrirMenu} ref={menuRef} className="menu-mobile"></span>
-      <img className="logo" src={logo} alt="logo" />
+      <img onClick={home} className="logo" src={logo} alt="logo" />
       <nav ref={navRef} className="nav">
         <a
           className="link"

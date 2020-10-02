@@ -1,0 +1,15 @@
+.imagem {
+  width: 60%;
+}
+
+.imagem > img {
+  width: 100%;
+  min-height: 100%;
+  animation: show 0.5s ease-in-out forwards;
+}
+
+@media (max-width: 970px) {
+  .imagem {
+    width: 100%;
+  }
+}

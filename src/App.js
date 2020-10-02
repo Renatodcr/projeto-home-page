@@ -1,17 +1,19 @@
 import React from "react";
 import Header from "./components/Header/Header";
-
-import "./App.css";
-import { Slider } from "./components/Slider/Slider";
+import Slider from "./components/Slider/Slider";
 import Footer from "./components/Footer/Footer";
+import { GlobalStorage } from "./components/GlobalContext/GlobalContext";
+import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Slider />
-      <Footer />
-    </div>
+    <GlobalStorage>
+      <div className="app">
+        <Header />
+        <Slider />
+        <Footer />
+      </div>
+    </GlobalStorage>
   );
 }
 

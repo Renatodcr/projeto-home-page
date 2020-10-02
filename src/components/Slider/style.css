@@ -3,22 +3,9 @@
   flex-direction: row;
   align-items: stretch;
 }
-.imagem {
-  width: 60%;
-}
-
-.imagem > img {
-  width: 100%;
-  min-height: 100%;
-  animation: show 0.5s ease-in-out forwards;
-}
 
 .ativo {
   animation: show 0.5s ease-in-out forwards;
-}
-
-.ativoE {
-  animation: showE 0.5s ease-in-out forwards;
 }
 
 @keyframes show {
@@ -32,118 +19,8 @@
   }
 }
 
-@keyframes showE {
-  from {
-    opacity: 0;
-    transform: translate3d(10px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.descricao {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 80px 80px;
-  animation: show 0.5s ease-in-out forwards;
-  position: relative;
-}
-
-.descricao > h1 {
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.descricao > p {
-  margin-bottom: 30px;
-  line-height: 1.6rem;
-  color: hsl(0, 0%, 63%);
-  font-weight: 500;
-}
-
-.descricao > a {
-  text-transform: uppercase;
-  color: hsl(0, 0%, 27%);
-  letter-spacing: 0.5rem;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.descricao > a:hover {
-  opacity: 0.8;
-}
-.box-button {
-  display: flex;
-  background-color: black;
-  position: absolute;
-  right: 72.6%;
-  bottom: 0%;
-}
-
-.box-button > button {
-  background-color: black;
-  border: none;
-  padding: 20px 30px;
-  cursor: pointer;
-}
-
-.box-button > button:hover {
-  background-color: #252525;
-}
-
-@media (max-width: 1185px) {
-  .descricao > h1 {
-    font-size: 1.8rem;
-  }
-
-  .box-button {
-    right: 68%;
-  }
-}
-
-@media (max-width: 1050px) {
-  .descricao {
-    padding: 50px 50px;
-  }
-
-  .descricao > a {
-    margin-bottom: 40px;
-  }
-
-  .box-button {
-    right: 63%;
-  }
-}
-
 @media (max-width: 970px) {
   .content {
     flex-direction: column;
-  }
-
-  .imagem {
-    width: 100%;
-  }
-
-  .descricao {
-    width: 100%;
-  }
-
-  .box-button {
-    right: 0%;
-    bottom: 101%;
-  }
-}
-
-@media (max-width: 600px) {
-  .descricao {
-    padding: 40px;
-  }
-  .descricao > h1 {
-    font-size: 1.6rem;
   }
 }

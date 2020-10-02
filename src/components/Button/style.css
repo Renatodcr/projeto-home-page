@@ -1,0 +1,37 @@
+.box-button {
+  display: flex;
+  background-color: black;
+  position: absolute;
+  right: 72.6%;
+  bottom: 0%;
+}
+
+.box-button > button {
+  background-color: black;
+  border: none;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.box-button > button:hover {
+  background-color: #252525;
+}
+
+@media (max-width: 1185px) {
+  .box-button {
+    right: 68%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .box-button {
+    right: 63%;
+  }
+}
+
+@media (max-width: 970px) {
+  .box-button {
+    right: 0%;
+    bottom: 101%;
+  }
+}
