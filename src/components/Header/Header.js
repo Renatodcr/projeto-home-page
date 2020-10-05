@@ -16,9 +16,10 @@ const Header = () => {
   return (
     <div className="header">
       <span onClick={abrirMenu} ref={menuRef} className="menu-mobile"></span>
-      <img onClick={home} className="logo" src={logo} alt="logo" />
+      <img className="logo" src={logo} alt="logo" />
       <nav ref={navRef} className="nav">
         <a
+          onClick={home}
           className="link"
           href="http://"
           target="_blank"

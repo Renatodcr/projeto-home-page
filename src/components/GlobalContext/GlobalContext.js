@@ -36,7 +36,8 @@ export const GlobalStorage = ({ children }) => {
     x === 0 ? setX(dados.length - 1) : setX(x - 1);
   }, [dados.length, x]);
 
-  const home = useCallback(() => {
+  const home = useCallback((e) => {
+    e.preventDefault();
     setX((x) => (x = 0));
   }, []);
 
